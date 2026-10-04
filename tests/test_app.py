@@ -14,7 +14,7 @@ def client(monkeypatch):
 
 
 def test_home_returns_200(client):
-    assert client.get("/").status_code == 500
+    assert client.get("/").status_code == 200
 
 
 def test_home_shows_server_name(client):
